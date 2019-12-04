@@ -85,10 +85,14 @@ major и hardsect_size
 # sudo fsck /dev/xda
 
 #Монтирование устройства в папку media:
-# sudo mount -t ext2 /dev/xda /media
+#sudo mount -t ext2 /dev/xda /media
 
 Ну далее уже можно размещать файлы и т.д.
 
 #Вывод диагностических сообщений модуля:
 
 # sudo cat /proc/kmsg
+
+Или
+
+# dmesg -c | tail -n60 | grep +
